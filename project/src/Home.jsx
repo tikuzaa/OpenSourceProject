@@ -1,6 +1,8 @@
 import { useState, useEffect} from "react"
 import { getUserData, getPullRequests } from "./callback/callback"
 import UserInformation from "./UserInformation"
+import About from './components/About'
+import LandingPage from "./LandingPage"
 
 
 function Home() {
@@ -41,7 +43,8 @@ function Home() {
       <>
       {
         user === null ? 
-        <button onClick={handleLogin}>Log in With Github</button> //add landing page here
+        //<button onClick={handleLogin}>Log in With Github</button> //add landing page here
+        <LandingPage/>
         : 
         <UserInformation userData={user} pullRequests={pullRequests} handleLogout={handleLogout} />
       }

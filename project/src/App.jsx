@@ -1,8 +1,9 @@
-import {Routes,Route} from 'react-router-dom'
+import {Routes,Route,Router} from 'react-router-dom'
 import './App.css'
 
 import Home from './Home'
 import Callback from './Callback'
+import Prizes from './components/Prizes'
 
 function App() {
 
