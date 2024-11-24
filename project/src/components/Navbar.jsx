@@ -12,7 +12,7 @@ const Navbar = () => {
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
   return (
-    <nav className="bg-[#004825] text-black m-15 py-12 px-8 shadow-custom-shadow">
+    <nav className="fixed top-0 left-0 right-0 text-black m-15 py-8 px-8 shadow-custom-shadow z-50" style={{ backgroundColor: 'rgb(0, 72, 37)' }}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         {/* <Link to="/" className="text-4xl text-gray-300 font-oxanium font-semibold pl-15 animate-blink">
