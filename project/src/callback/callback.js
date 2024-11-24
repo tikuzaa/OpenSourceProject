@@ -33,4 +33,21 @@ return userResponse.data
 
 }
 
-export  {getAccessToken, getUserData}
+async function getPullRequests(access_token) {
+  try {
+    const response = await axios.get(
+      "https://api.github.com/repos/sayandip-ghosh/EMS/pulls?state=all",
+      {
+        headers: {
+          'Authorization': `Bearer ${access_token}`
+        }
+      }
+    );
+    return response.data; // Return the data directly
+  } catch (error) {
+    console.error("Error fetching pull requests:", error);
+    throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+export  {getAccessToken, getUserData, getPullRequests}
