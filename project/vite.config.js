@@ -7,7 +7,8 @@ export default defineConfig({
   server :{
     proxy : {
       '/login/oauth/access_token':'https://github.com',
-      '/user':'https://api.github.com'
+      '/user':'https://api.github.com',
+      // '/repos/sayandip-ghosh/EMS/pulls?state=all': 'https://api.github.com'
     }
   }
 })
