@@ -11,8 +11,8 @@ export default {
         Exo:  ["Exo", "sans-serif"],
       }
     },
-    boxShadow: {
-      'custom-shadow': '0 4px 15px rgba(0, 0, 0, 0.5)',
+   boxShadow: {
+      'custom-shadow': '0 2px 6px rgba(0, 0, 0, 0.25)',
     },
     fontFamily:{
       oxanium: ['Oxanium', 'sans-serif'],

@@ -44,18 +44,16 @@ const LandingPage = () => {
   return (
     <>
     <Navbar/>
-      <div className="min-h-screen bg-[#004825] flex items-center justify-center px-6">
+    <div className="min-h-screen bg-[#004825] flex items-center justify-center px-6 relative top-[5rem]">
         <div className="text-center text-2xl font-bold text-[#004825] p-10">
-          <h1 className="text-8xl font-oxanium font-bold text-gray-300 mb-10 leading-tight">
+          <h1 className="text-8xl font-oxanium font-bold text-gray-300 mb-10">
             Registration is On
           </h1>
           <p className="text-slate-400 text-lg mb-8 font-normal">
-            Join us in making the world a better place through code! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Hic ipsa animi fugit
-            asperiores quae, commodi dolor quisquam praesentium, accusamus enim
-            excepturi provident! Molestiae voluptates cum minima, ex, beatae
-            dolorem totam necessitatibus ut, commodi nisi ab eum inventore modi
-            quas et.
+          Are you ready to unleash your creativity and coding skills? <br />Join us for
+          an exhilarating open-source project competition where developers, designers, and 
+          tech enthusiasts come together to innovate and collaborate! <br />
+          🌟Sign Up Now!🌟
           </p>
           <button
             onClick={handleLogin}
