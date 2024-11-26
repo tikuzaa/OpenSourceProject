@@ -26,6 +26,7 @@ export default {
     },
     animation: {
       blink: 'blink 0.5s infinite', 
+      ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
     },
     keyframes: {
       blink: {
@@ -34,7 +35,12 @@ export default {
         '50%': { color: 'white', opacity:'1' },
         '75%' : {color:'#002812', opacity: '0.75'  }
       },
-      
+      ping: {
+        '0%': { transform: 'scale(0.5)', opacity: '0' },
+        '50%': { transform: 'scale(1)', opacity: '0.5' },
+        '75%': { transform: 'scale(2)', opacity: '0.75' },
+        '100%': { transform: 'scale(2)', opacity: '1' },
+      },
     },
   },
   plugins: [],
