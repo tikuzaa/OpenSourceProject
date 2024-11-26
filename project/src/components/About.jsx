@@ -4,6 +4,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-200 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row max-w-[69rem] w-full">
+      
         <div className="flex-1 text-left m-4 pt-[6.5rem]">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-oxanium font-bold text-[#004825] mb-6">
             About
