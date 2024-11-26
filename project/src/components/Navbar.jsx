@@ -7,26 +7,25 @@ const Navbar = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLink(false);
-    }, 3000); 
+    }, 1500); 
 
-    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+    return () => clearTimeout(timer); 
   }, []);
   return (
-    <nav className="fixed top-0 left-0 right-0 text-black m-15 py-8 px-8 shadow-custom-shadow z-50" style={{ backgroundColor: 'rgb(0, 72, 37)' }}>
+    <nav className="fixed top-0 left-0 right-0 text-black m-15 py-5 px-8 shadow-custom-shadow z-50" style={{ backgroundColor: 'rgb(0, 72, 37)' }}>
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        {/* <Link to="/" className="text-4xl text-gray-300 font-oxanium font-semibold pl-15 animate-blink">
-          DevJam 1.O
-        </Link> */}
         <>
       {showLink ? (
         <Link to="/" className="text-4xl text-gray-300 font-oxanium font-semibold pl-15 animate-blink">
-          DevJam 1.O
+          DE-SPACE 1.O
+          <h1 className="text-lg text-light ease-in">by Hackerspace MSIT</h1>
         </Link>
       ) : (
         <div className="text-4xl text-gray-300 font-oxanium font-semibold pl-15">
-          DevJam 1.O
+          DE-SPACE 1.O
+          <h1 className="text-lg text-light ease-in">by Hackerspace MSIT</h1>
         </div>
+        
       )}
     </>
         {/* Navigation Links */}

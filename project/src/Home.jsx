@@ -19,7 +19,7 @@ function Home() {
   useEffect(() => {
     const token = localStorage.getItem('access_token')
 
-    if(token !== null & user === null) {
+    if(token !== null && user === null) {
       async function fetchUserData() {
         const data = await getUserData(token)
         setUser(data)

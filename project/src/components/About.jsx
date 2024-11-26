@@ -12,7 +12,7 @@ const About = () => {
             Open Source
           </h2>
           <p className="text-black text-base sm:text-lg mb-4 w-full font-oxanium">
-            <p className="font-bold">🌍 What is Open Source?</p>
+            <span className="font-bold">🌍 What is Open Source?</span>
             <br />
             Open source refers to software whose source code is made available
             to the public for anyone to view, use, modify, and distribute. This
