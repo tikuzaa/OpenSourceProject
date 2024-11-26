@@ -5,13 +5,13 @@ const Footer = () => {
     <footer className="min-h-96 bg-[#062800] text-white flex flex-col justify-between p-8 pt-10">
         <div className='flex flex-row space-x-10 justify-center mt-10'>
         <div className='w-[35rem]'>
-            <h1 className="text-2xl font-oxanium font-bold mb-4">DE-SPACE 1.O</h1>
+            <h1 className="text-2xl font-oxanium font-bold mb-4 cursor-default">DE-SPACE 1.O</h1>
             <h2 className='text-xl mb-6 font-oxanium'>Code, Collaborate, Celebrate!</h2>
             <p className='w-2/3'>It's not just about the competition; it's about building a community and celebrating the journey of innovation.</p>
         </div>
 
       {/* About Section */}
-      <div className="mb-8 font-oxanium">
+      <div className="mb-8 font-oxanium cursor-default">
         <h2 className="text-xl mb-4 relative group text-xl hover:transition duration-300">About<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-[60px]"></span></h2>
         <h2 className="text-xl mb-4 relative group text-xl hover:transition duration-300">Help<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-[50px]"></span></h2>
         <h2 className="text-xl mb-4 relative group text-xl hover:transition duration-300">Contact<span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-full"></span></h2>
@@ -20,7 +20,7 @@ const Footer = () => {
     
       {/* Socials Section */}
       <div className="mb-8">
-        <h2 className="text-3xl font-oxanium font-bold mb-4">FOLLOW US</h2>
+        <h2 className="text-3xl font-oxanium font-bold mb-4 cursor-default">FOLLOW US</h2>
         <ul className="flex-col font-oxanium">
           <li>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="relative group text-xl hover:transition duration-300">

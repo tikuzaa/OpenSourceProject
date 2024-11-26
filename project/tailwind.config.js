@@ -42,15 +42,7 @@ export default {
         '100%': { transform: 'scale(2)', opacity: '1' },
       },
     },
-    transitionProperty: {
-      'opacity': 'opacity',
-    },
-    transitionTimingFunction: {
-      'ease-in': 'ease-in',
-    },
-    transitionDuration: {
-      '700': '700ms', // Custom duration for 700 milliseconds
-    },
+    
   },
   plugins: [],
 }
