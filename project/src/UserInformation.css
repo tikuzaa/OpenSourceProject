@@ -1,0 +1,190 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center; 
+  min-height: 100vh;
+  background-color: #062800; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Horizontal Dashboard Box (Wide) */
+.dashboard-box {
+  width: 90%;
+  max-width: 1200px; 
+  height: auto; 
+  display: flex;
+  flex-direction: column; 
+  padding: 30px;
+  gap: 20px; 
+  box-sizing: border-box;
+}
+
+/* Profile Section Merged into Dashboard */
+.user-header {
+  display: flex;
+  align-items: center; 
+  justify-content: space-evenly; 
+  width: 100%;
+  margin-bottom: 20px; 
+  font-family: 'Oxanium', sans-serif;
+}
+
+/* Profile Section Merged into Dashboard */
+.user-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  position: relative; 
+  width: 100%; 
+  margin-bottom: 20px; 
+  padding: 10px 30px; 
+}
+
+/* User Avatar Styling */
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #008147;
+  position: absolute; 
+  left: 30px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+/* Welcome message */
+.user-header h2 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #8197af;
+  margin: 0;
+  text-align: center; 
+  width: 100%;
+  padding-left: 140px;
+  padding-right: 80px; 
+  line-height: 100px; 
+}
+
+/* Logout button */
+.logout-button {
+  background-color: #9f0707;
+  color: #ffffff;
+  border: none;
+  padding:13px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight:600;
+  position: absolute;
+  right: 30px; 
+  top: 50%; 
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d74b4b;
+  color: black;
+}
+
+
+/* Repository Section (Horizontal Layout) */
+.repositories {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  padding-left: 20px;
+  width: 100%;
+  margin-top: 30px; 
+}
+
+
+/* Repository card */
+.repo-card {
+  background:#e0dbdb;;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding:3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Repository header */
+.repo-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.repo-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.repo-header a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+/* Pull request items */
+.pr-list {
+  margin-top: 10px;
+}
+
+.pr-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+  padding: 2rem;
+  background: #eaeaea;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.pr-status {
+  font-size: 20px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.pr-status.accepted {
+  background-color: #008217; 
+  color: #ffffff;
+}
+
+.pr-status.pending {
+  background-color: #f39c12; 
+  color: #ffffff;
+}
+
+.pr-item p {
+  font-size: 20px;
+  color: #181818;
+}
+
+.view-link {
+  font-size: 16px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}

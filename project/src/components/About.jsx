@@ -4,6 +4,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gray-200 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row max-w-[69rem] w-full">
+      
         <div className="flex-1 text-left m-4 pt-[6.5rem]">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-oxanium font-bold text-[#004825] mb-6">
             About
@@ -54,7 +55,7 @@ const About = () => {
           </div>
           {/* Button Section */}
           <div className="flex justify-center items-center m-5">
-          <a href="https://discord.gg/kUGXBWs8Cb" target="blank">
+          <a href="https://discord.gg/DU9HBZdk3m" target="blank">
             <button className="bg-[#008217] text-white w-full sm:w-48 h-12 font-oxanium font-semibold py-3 px-4 rounded-full hover:bg-[#00a05a] hover:text-black transition duration-300">
               Join Discord
             </button>
