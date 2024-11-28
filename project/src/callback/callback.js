@@ -21,6 +21,7 @@ async function getAccessToken() {
 }
 
 async function getUserData(access_token) {
+  console.log("From user data function",access_token)
   const userResponse = await axios.get(
     "/user",
     {

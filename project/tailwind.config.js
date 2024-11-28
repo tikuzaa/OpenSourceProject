@@ -25,10 +25,15 @@ export default {
       bold: 700,
     },
     animation: {
+      spin: 'spin 1s linear infinite',
       blink: 'blink 0.5s infinite', 
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
     },
     keyframes: {
+      spin: {
+        '0%': { transform: 'rotate(0deg)' },
+        '100%': { transform: 'rotate(360deg)' },
+      },
       blink: {
         '0%, 100%': { color: '#002812', opacity: '1' },
         '25%': {color: 'white', opacity:'0.25'},
