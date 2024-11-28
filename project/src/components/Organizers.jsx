@@ -5,24 +5,64 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const organizersData = [
   {
-    name: 'Aniruddha Ghosh',
-    description: 'Description for Organizer One.',
-    image: 'link_to_image_1',
-  },
-  {
     name: 'Shekhar Hans',
     description: 'Description for Organizer Two.',
-    image: 'link_to_image_2',
+    image: '../pfp/shekhar.jpg',
+  },
+  {
+    name: 'Aniruddha Ghosh',
+    description: 'Description for Organizer One.',
+    image: '../pfp/aniruddha.jpg',
   },
   {
     name: 'Arnab Manna',
     description: 'Description for Organizer Three.',
-    image: 'link_to_image_3',
+    image: '../pfp/arnab.jpg',
   },
   {
-    name: 'arekjon',
+    name: 'Bidisha Banik',
     description: 'Description for Organizer Four.',
-    image: 'link_to_image_4',
+    image: '../pfp/bidisha.jpg',
+  },
+  {
+    name: 'Debangan Dey',
+    description: 'Description for Organizer Four.',
+    image: '../pfp/debangan.jpg',
+  },
+  {
+    name: 'Sayandip Ghosh',
+    description: 'Description for Organizer Four.',
+    image: '../pfp/sayandip.jpg',
+  },
+  {
+    name: 'Sahil Golder',
+    description: 'Description for Organizer Four.',
+    image: '../pfp/sahil.jpg',
+  },
+  {
+    name: 'Somshirsha Bhattacharya',
+    description: 'Description for Organizer Four.',
+    image: '../pfp/somshirsha.jpg',
+  },
+  {
+    name: 'Ankit Kundu',
+    description: 'Description for Organizer Four.',
+    image: '../pfp/ankit.jpg',
+  },
+  {
+    name: 'Aahana Malakar',
+    description: 'Description for Organizer Four.',
+    image: '../pfp/aahana.jpg',
+  },
+  {
+    name: 'Sagarika Bandopadhyay',
+    description: 'Description for Organizer Four.',
+    image: '../pfp/sagarika.jpg',
+  },
+  {
+    name: 'Sayan Sanpui',
+    description: 'Description for Organizer Four.',
+    image: '../pfp/sayan.jpg',
   },
   // Add more organizers as needed
 ];
@@ -83,8 +123,8 @@ const Organizers = () => {
       <Slider {...settings}>
         {organizersData.map((organizer, index) => (
           <div key={index} className="p-4">
-            <div className="bg-[#AFE1AF] border-black border-solid rounded-lg shadow-lg overflow-hidden transform transition-transform duration-700 hover:scale-105">
-              <img src={organizer.image} alt={organizer.name} className="w-50 h-48 object-cover" />
+            <div className="bg-[#AFE1AF] flex flex-col items-center justify-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-700 hover:scale-105">
+              <img src={organizer.image} alt={organizer.name} className="w-[260px] h-[260px] rounded-lg object-cover p-4 flex items-center justify-center" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold">{organizer.name}</h3>
                 <p className="text-gray-600">{organizer.description}</p>
