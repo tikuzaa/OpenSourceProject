@@ -21,8 +21,8 @@ const organizersData = [
   },
   {
     name: 'arekjon',
-    description: 'Description for Organizer Three.',
-    image: 'link_to_image_3',
+    description: 'Description for Organizer Four.',
+    image: 'link_to_image_4',
   },
   // Add more organizers as needed
 ];
@@ -59,11 +59,27 @@ const Organizers = () => {
     cssEase: "linear",
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
+    responsive: [
+      {
+        breakpoint: 820, // For screens up to 640px
+        settings: {
+          slidesToShow: 2, // Show 2 slides
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 560, // For screens up to 500px
+        settings: {
+          slidesToShow: 1, // Show 1 slide
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="min-h-screen organizers-section relative py-40 px-10">
-      <h2 className="text-center font-oxanium text-[#004825] text-8xl font-bold mb-[8rem]">Meet Our Organizers</h2>
+      <h2 className="text-center font-oxanium text-[#004825] text-8xl font-bold mb-[8rem] max-[640px]:text-5xl md:text-6xl lg:text-8xl">Meet Our Organizers</h2>
       <Slider {...settings}>
         {organizersData.map((organizer, index) => (
           <div key={index} className="p-4">

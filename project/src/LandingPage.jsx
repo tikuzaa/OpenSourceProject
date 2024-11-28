@@ -49,28 +49,31 @@ const LandingPage = () => {
 return (
   <>
     <Navbar />
-    <div className="min-h-screen bg-[#004825] flex items-center justify-center px-6 relative top-[5rem]">
+    <div className="min-h-screen bg-[#004825] flex items-center justify-center px-6 relative top-[5rem]" id="home">
       <div className="text-center text-2xl font-bold text-[#004825] p-10">
-        <h1 className="text-8xl font-oxanium font-bold text-gray-300 mb-10">
+        <h1 className="text-8xl font-oxanium font-bold text-gray-300 mb-10 max-[712px]:leading-[0.5rem]">
           {/* <span className="text-8xl font-poppins font-bold animate-ping">
             {displayText}
           </span> */}
           {
             (randomWords.length<currentIndex)?
             <>
-              <span className="text-8xl font-oxanium font-bold animate-ping">
+              <span className="text-8xl font-oxanium font-bold animate-ping max-[712px]:text-[2.75rem]">
             ❗
           </span>
-          <span className="text-8xl font-oxanium font-bold ">
+          <span className="text-8xl font-oxanium font-bold max-[712px]:text-6xl max-[712px]:text-[2.75rem]">
           Registration is Live
         </span>
         </>
-        : displayText
+        : 
+        <span className="text-8xl font-oxanium font-bold max-[712px]:text-6xl max-[712px]:text-[2.75rem]">
+        {displayText}
+        </span>
             
           }
          
         </h1>
-        <p className="text-slate-400 text-lg mb-8 font-normal">
+        <p className="text-slate-400 text-lg mb-8 font-normal text-wrap">
           Are you ready to unleash your creativity and coding skills? <br />Join us for
           an exhilarating open-source project competition where developers, designers, and 
           tech enthusiasts come together to innovate and collaborate! <br />

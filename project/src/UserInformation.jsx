@@ -133,7 +133,8 @@ const UserDashboard = ({ userData, pullRequests, handleLogout }) => {
               </div>
             ))
           ) : (
-            <p>No pull requests found.</p>
+            null //request not found div
+            // <p>No pull requests found.</p>
           )}
         </div>
       </div>
