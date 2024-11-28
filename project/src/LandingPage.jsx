@@ -5,6 +5,9 @@ import Prizes from "./components/Prizes"
 import Navbar from "./components/Navbar";
 import { FaGithub } from "react-icons/fa";
 import Organizers from "./components/Organizers";
+
+import { FaExclamation } from "react-icons/fa";
+
 const LandingPage = () => {
   const originalText = "❗Registration is Live";
   const randomWords = [

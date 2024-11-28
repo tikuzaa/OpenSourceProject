@@ -41,13 +41,13 @@ const Navbar = () => {
         {/* Navigation Links for Desktop */}
         <div className="hidden md:flex space-x-10 pr-20 font-oxanium text-gray-300">
           <Link to="/" className="relative group text-2xl hover:transition duration-300">
-            Home
+             Home
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link to="/prizes" className="relative group text-2xl hover:transition duration-300">
-            Prizes
+          <a href="#prizes" className="relative group text-2xl hover:transition duration-300">
+          Prizes
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          </a>
           <Link to="/guides" className="relative group text-2xl hover:transition duration-300">
             Guides
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-full"></span>
@@ -84,7 +84,7 @@ const Navbar = () => {
           &gt; Organizers
           <span className="absolute left-[25px] bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-[7.5rem]"></span>
         </Link>
-        <Link to="/prizes" className="relative block px-6 font-oxanium text-xl hover:transition duration-300 group">
+        <Link to="#prizes" className="relative block px-6 font-oxanium text-xl hover:transition duration-300 group">
           &gt; Prizes
           <span className="absolute left-[25px] bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-[4.8rem]"></span>
         </Link>
