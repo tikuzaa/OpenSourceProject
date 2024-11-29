@@ -64,6 +64,11 @@ const organizersData = [
     description: 'Description for Organizer Four.',
     image: '../src/pfp/sayan.jpg',
   },
+  {
+    name: 'Muskan Das',
+    description: 'Description for Organizer Four.',
+    image: '../src/pfp/muskaan.jpg',
+  },
   // Add more organizers as needed
 ];
 
