@@ -7,62 +7,62 @@ const organizersData = [
   {
     name: 'Shekhar Hans',
     description: 'Description for Organizer Two.',
-    image: '../pfp/shekhar.jpg',
+    image: '../src/pfp/shekhar.jpg',
   },
   {
     name: 'Aniruddha Ghosh',
     description: 'Description for Organizer One.',
-    image: '../pfp/aniruddha.jpg',
+    image: '../src/pfp/aniruddha.jpg',
   },
   {
     name: 'Arnab Manna',
     description: 'Description for Organizer Three.',
-    image: '../pfp/arnab.jpg',
+    image: '../src/pfp/arnab.jpg',
   },
   {
     name: 'Bidisha Banik',
     description: 'Description for Organizer Four.',
-    image: '../pfp/bidisha.jpg',
+    image: '../src/pfp/bidisha.jpg',
   },
   {
     name: 'Debangan Dey',
     description: 'Description for Organizer Four.',
-    image: '../pfp/debangan.jpg',
+    image: '../src/pfp/debangan.jpg',
   },
   {
     name: 'Sayandip Ghosh',
     description: 'Description for Organizer Four.',
-    image: '../pfp/sayandip.jpg',
+    image: '../src/pfp/sayandip.jpg',
   },
   {
     name: 'Sahil Golder',
     description: 'Description for Organizer Four.',
-    image: '../pfp/sahil.jpg',
+    image: '../src/pfp/sahil.jpg',
   },
   {
     name: 'Somshirsha Bhattacharya',
     description: 'Description for Organizer Four.',
-    image: '../pfp/somshirsha.jpg',
+    image: '../src/pfp/somshirsha.jpg',
   },
   {
     name: 'Ankit Kundu',
     description: 'Description for Organizer Four.',
-    image: '../pfp/ankit.jpg',
+    image: '../src/pfp/ankit.jpg',
   },
   {
     name: 'Aahana Malakar',
     description: 'Description for Organizer Four.',
-    image: '../pfp/aahana.jpg',
+    image: '../src/pfp/aahana.jpg',
   },
   {
     name: 'Sagarika Bandopadhyay',
     description: 'Description for Organizer Four.',
-    image: '../pfp/sagarika.jpg',
+    image: '../src/pfp/sagarika.jpg',
   },
   {
     name: 'Sayan Sanpui',
     description: 'Description for Organizer Four.',
-    image: '../pfp/sayan.jpg',
+    image: '../src/pfp/sayan.jpg',
   },
   // Add more organizers as needed
 ];
@@ -118,16 +118,16 @@ const Organizers = () => {
   };
 
   return (
-    <div className="min-h-screen organizers-section relative py-40 px-10">
+    <div className="min-h-screen organizers-section relative py-40 px-10 bg-[#ffffff]">
       <h2 className="text-center font-oxanium text-[#004825] text-8xl font-bold mb-[8rem] max-[640px]:text-5xl md:text-6xl lg:text-8xl">Meet Our Organizers</h2>
       <Slider {...settings}>
         {organizersData.map((organizer, index) => (
           <div key={index} className="p-4">
             <div className="bg-[#AFE1AF] flex flex-col items-center justify-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-700 hover:scale-105">
-              <img src={organizer.image} alt={organizer.name} className="w-[260px] h-[260px] rounded-lg object-cover p-4 flex items-center justify-center" />
+              <img src={organizer.image} alt={organizer.name} className="w-[260px] h-[260px] rounded-[1.5rem] object-cover p-4 flex items-center justify-center" />
               <div className="p-4">
-                <h3 className="text-xl font-semibold">{organizer.name}</h3>
-                <p className="text-gray-600">{organizer.description}</p>
+                <h3 className="text-xl font-oxanium text-center font-semibold">{organizer.name}</h3>
+                {/* <p className="text-gray-600 text-center">{organizer.description}</p> */}
               </div>
             </div>
           </div>

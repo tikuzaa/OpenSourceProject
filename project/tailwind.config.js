@@ -16,6 +16,7 @@ export default {
     },
     fontFamily:{
       oxanium: ['Oxanium', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
     },
     fontWeight: {
       light: 300,

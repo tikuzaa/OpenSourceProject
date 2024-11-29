@@ -51,4 +51,21 @@ async function getPullRequests(access_token) {
   }
 }
 
-export  {getAccessToken, getUserData, getPullRequests}
+async function getPullRequests1(access_token) {
+  try {
+    const response = await axios.get(
+      "https://api.github.com/repos/bidisha-15/Hacktoberfest2024-pravo/pulls?state=all",
+      {
+        headers: {
+          'Authorization': `Bearer ${access_token}`
+        }
+      }
+    );
+    return response.data; // Return the data directly
+  } catch (error) {
+    console.error("Error fetching pull requests:", error);
+    throw error; // Rethrow the error to handle it in the component
+  }
+}
+
+export  {getAccessToken, getUserData, getPullRequests, getPullRequests1}

@@ -1,5 +1,5 @@
 import { useState, useEffect} from "react"
-import { getUserData, getPullRequests } from "./callback/callback"
+import { getUserData, getPullRequests, getPullRequests1 } from "./callback/callback"
 import UserInformation from "./UserInformation"
 import { useNavigate } from "react-router-dom"
 import LandingPage from "./LandingPage"
@@ -9,7 +9,7 @@ function Dashboard() {
 
   const [user, setUser] = useState(null)
   const [pullRequests, setPullRequests] = useState([])
-
+  const [pullRequests1, setPullRequests1] = useState([])
   const navigate = useNavigate()
 
   const handleLogout = () => {
@@ -17,6 +17,7 @@ function Dashboard() {
     setUser(null)
     navigate('/')
     setPullRequests([])
+    setPullRequests1([])
   }
 
   useEffect(() => {
@@ -30,6 +31,8 @@ function Dashboard() {
         // Fetch pull requests after user data is retrieved
         const prData = await getPullRequests(token);
         setPullRequests(prData);
+        const prData1 = await getPullRequests1(token);
+        setPullRequests1(prData1);
       }
       
     fetchUserData()
@@ -43,7 +46,9 @@ function Dashboard() {
       {
         user !== null ? 
         //<button onClick={handleLogin}>Log in With Github</button> //add landing page here
-        <UserInformation userData={user} pullRequests={pullRequests} handleLogout={handleLogout} /> : null
+        <UserInformation userData={user} pullRequests={pullRequests} handleLogout={handleLogout} 
+        pullRequests1={pullRequests1}
+        /> : null
 
         
       }
