@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #062800; 
 }
 
 .dashboard-container {
@@ -46,7 +47,7 @@ html, body {
   position: relative; 
   width: 100%; 
   margin-bottom: 20px; 
-  padding: 10px 30px; 
+  /* padding: 10px 30px;  */
 }
 
 /* User Avatar Styling */
@@ -55,10 +56,10 @@ html, body {
   height: 100px;
   border-radius: 50%;
   border: 3px solid #008147;
-  position: absolute; 
-  left: 30px; 
-  top: 50%; 
-  transform: translateY(-50%); 
+  /* position: absolute;  */
+  /* left: 30px; 
+  top: 50%;  */
+  /* transform: translateY(-50%);  */
 }
 
 /* Welcome message */
@@ -69,9 +70,9 @@ html, body {
   margin: 0;
   text-align: center; 
   width: 100%;
-  padding-left: 140px;
-  padding-right: 80px; 
-  line-height: 100px; 
+  /* padding-left: 140px;
+  padding-right: 80px;  */
+  /* line-height: 100px;  */
 }
 
 /* Logout button */
@@ -84,10 +85,10 @@ html, body {
   border-radius: 8px;
   font-size: 20px;
   font-weight:600;
-  position: absolute;
+  /* position: absolute; */
   right: 30px; 
   top: 50%; 
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   transition: background-color 0.3s ease;
 }
 
@@ -162,6 +163,8 @@ html, body {
   text-align: center;
   font-weight: 600;
   width: fit-content;
+  position: relative;
+  right: 8px;
 }
 
 .pr-status.accepted {
@@ -187,4 +190,36 @@ html, body {
 
 .view-link:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .user-header h2{
+    font-size: 3rem;
+  }
+  .user-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}
+@media screen and (min-width: 1024px){
+  .user-avatar {
+    width: 136px;
+    height: 113px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .user-header h2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 344px) {
+  .pr-status{
+    font-size: 1rem;
+    position: relative;
+    right: 12px;
+  }
 }
