@@ -1,8 +1,8 @@
 import React from 'react'
 const RepoSection = ({ userData, pullRequests}) => {
-    pullRequests = pullRequests.filter((pr) => pr.user.login === userData.login);
+    const pullRequestsNew = pullRequests.filter((pr) => pr.user.login === userData.login);
     // Group PRs by repository
-    const repoMap = pullRequests.reduce((acc, pr) => {
+    const repoMap = pullRequestsNew.reduce((acc, pr) => {
       const repoName = pr.base.repo.name;
       if (!acc[repoName]) {
         acc[repoName] = {
@@ -42,7 +42,7 @@ const RepoSection = ({ userData, pullRequests}) => {
                 </div>
                 <div className="pr-list">
                   <p className='font-poppins'>
-                    You have made {pullRequests.length} pull request(s) in this
+                    You have made {pullRequestsNew.length} pull request(s) in this
                     repository
                   </p>{" "}
                   <br />
@@ -67,7 +67,27 @@ const RepoSection = ({ userData, pullRequests}) => {
             ))
           ) : (
             // null //request not found div
-            <p>No pull requests found.</p>
+            // <p>No pull requests found.</p>
+
+            pullRequests.length > 0 && (
+              <div className="repo-card" key={pullRequests[0].base.repo.id}>
+                  <div className="repo-header">
+                      <a href={pullRequests[0].base.repo.html_url} target="_blank" rel="noopener noreferrer">
+                          <img
+                              src={pullRequests[0].base.repo.owner.avatar_url}
+                              alt="Repo Owner Avatar"
+                              className="repo-avatar"
+                          />
+                      </a>
+                      <h3>
+                          <a href={pullRequests[0].base.repo.html_url} target="_blank" rel="noopener noreferrer">
+                              {pullRequests[0].base.repo.name}
+                          </a>
+                      </h3>
+                  </div>
+                  <p className='font-poppins'>You have not made any pull requests in this repository.</p>
+              </div>)
+
           )}
         </div>
     )
