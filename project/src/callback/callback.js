@@ -51,6 +51,23 @@ async function getPullRequests(access_token) {
   }
 }
 
+async function getIssues(access_token) {
+  try {
+    const response = await axios.get(
+      "https://api.github.com/repos/sayandip-ghosh/EMS/issues",
+      {
+        headers: {
+          'Authorization': `Bearer ${access_token}`
+        }
+      }
+    );
+    return response.data; // Return the data directly
+  } catch (error) {
+    console.error("Error fetching pull requests:", error);
+    throw error; // Rethrow the error to handle it in the component
+  }
+}
+
 async function getPullRequests1(access_token) {
   try {
     const response = await axios.get(
@@ -68,4 +85,4 @@ async function getPullRequests1(access_token) {
   }
 }
 
-export  {getAccessToken, getUserData, getPullRequests, getPullRequests1}
+export  {getAccessToken, getUserData, getPullRequests, getIssues, getPullRequests1}
