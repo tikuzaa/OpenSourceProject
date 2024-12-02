@@ -176,6 +176,10 @@ html, body {
   background-color: #f39c12; 
   color: #ffffff;
 }
+.pr-status.rejected {
+  background-color: #e7331b; 
+  color: #ffffff;
+}
 
 .pr-item p {
   font-size: 20px;

@@ -16,9 +16,18 @@ const RepoSection = ({ userData, pullRequests, issues }) => {
         prs: [],
       };
     }
+    // Determine the status of the pull request
+    let status;
+    if (pr.state === "open") {
+      status = "Pending";
+    } else if (pr.merged_at) {
+      status = "Accepted";
+    } else {
+      status = "Rejected"; // Closed but not merged
+    }
     acc[repoName].prs.push({
       title: pr.title,
-      status: pr.state === "open" ? "Pending" : "Accepted",
+      status: status,
       prUrl: pr.html_url,
     });
     return acc;
