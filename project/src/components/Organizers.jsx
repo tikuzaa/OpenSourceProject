@@ -6,71 +6,57 @@ import { Reveal } from "./Reveal";
 
 const organizersData = [
   {
+    name: "Muskaan Das",
+    image: "../src/pfp/muskaan.jpg",
+  },
+  {
     name: "Shekhar Hans",
-    description: "Description for Organizer Two.",
     image: "../src/pfp/shekhar.jpg",
   },
   {
     name: "Aniruddha Ghosh",
-    description: "Description for Organizer One.",
     image: "../src/pfp/aniruddha.jpg",
   },
   {
     name: "Arnab Manna",
-    description: "Description for Organizer Three.",
     image: "../src/pfp/arnab.jpg",
   },
   {
     name: "Bidisha Banik",
-    description: "Description for Organizer Four.",
     image: "../src/pfp/bidisha.jpg",
   },
   {
     name: "Debangan Dey",
-    description: "Description for Organizer Four.",
     image: "../src/pfp/debangan.jpg",
   },
   {
     name: "Sayandip Ghosh",
-    description: "Description for Organizer Four.",
     image: "../src/pfp/sayandip.jpg",
   },
   {
     name: "Sahil Golder",
-    description: "Description for Organizer Four.",
     image: "../src/pfp/sahil.jpg",
   },
   {
     name: "Somshirsha Bhattacharya",
-    description: "Description for Organizer Four.",
     image: "../src/pfp/somshirsha.jpg",
   },
   {
     name: "Ankit Kundu",
-    description: "Description for Organizer Four.",
     image: "../src/pfp/ankit.jpg",
   },
   {
     name: "Aahana Malakar",
-    description: "Description for Organizer Four.",
     image: "../src/pfp/aahana.jpg",
   },
   {
-    name: "Sagarika Bandopadhyay",
-    description: "Description for Organizer Four.",
+    name: "Sagarika Bandyopadhyay",
     image: "../src/pfp/sagarika.jpg",
   },
   {
     name: "Sayan Sanpui",
-    description: "Description for Organizer Four.",
     image: "../src/pfp/sayan.jpg",
   },
-  {
-    name: "Muskan Das",
-    description: "Description for Organizer Four.",
-    image: "../src/pfp/muskaan.jpg",
-  },
-  // Add more organizers as needed
 ];
 
 const CustomPrevArrow = ({ onClick }) => {
@@ -135,7 +121,7 @@ const Organizers = () => {
         <Reveal>Meet Our Organizers</Reveal>
       </h2>
       <Reveal>
-        <Slider {...settings}>
+        <Slider {...settings} className="custom-dots">
           {organizersData.map((organizer, index) => (
             <div key={index} className="p-4">
               <div className="bg-[#AFE1AF] flex flex-col items-center justify-center rounded-lg shadow-lg overflow-hidden transform transition-transform duration-700 hover:scale-105">

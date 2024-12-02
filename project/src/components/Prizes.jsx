@@ -8,9 +8,11 @@ const Prizes = () => {
           <h2 className="text-6xl sm:text-6xl md:text-6xl lg:text-8xl font-oxanium font-bold text-white mb-10">
             <Reveal>Prizes</Reveal>
           </h2>
-          <p className="text-slate-400 text-4xl sm:text-4xl md:text-6xl lg:text-8xl mb-4 w-full">
-            <Reveal>Coming Soon !!</Reveal>
-          </p>
+          <Reveal>
+            <p className="text-slate-400 text-4xl sm:text-4xl md:text-6xl lg:text-8xl mb-4 w-full">
+              Coming Soon !!
+            </p>
+          </Reveal>
         </div>
       </div>
     </div>

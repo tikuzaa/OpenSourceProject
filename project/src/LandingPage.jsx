@@ -7,8 +7,6 @@ import { FaGithub } from "react-icons/fa";
 import Organizers from "./components/Organizers";
 import { Reveal } from "./components/Reveal";
 
-import { FaExclamation } from "react-icons/fa";
-
 const LandingPage = () => {
   const originalText = "❗Registration is Live";
   const randomWords = [
@@ -76,15 +74,25 @@ const LandingPage = () => {
               )}
             </Reveal>
           </h1>
-          <p className="text-slate-400 text-lg mb-8 font-normal text-wrap">
-            <Reveal>
-              Are you ready to unleash your creativity and coding skills? <br />
-              Join us for an exhilarating open-source project competition where
+          <Reveal>
+            <p className="text-slate-400 text-lg mb-8 font-normal font-oxanium text-wrap">
+              {/* Join us for an exhilarating open-source project competition where
               developers, designers, and tech enthusiasts come together to
+              innovate and collaborate! <br /> */}
+              <br />
+              📅
+              <strong className="text-2xl"> December 5th, 2024</strong> -
+              <strong className="text-2xl"> January 1st, 2025 </strong>📅
+              <br /> Join us for an exhilarating open-source project competition
+              where developers, designers, and tech enthusiasts come together to
               innovate and collaborate! <br />
-              🌟Sign Up Now!🌟
-            </Reveal>
-          </p>
+              <br />
+              {/* Don't miss this opportunity to learn, grow, and make an impact
+              through open-source contributions! <br /> */}
+              🌟 <strong className="text-2xl">Sign Up Now!</strong> 🌟
+              {/* </Reveal> */}
+            </p>
+          </Reveal>
           <Reveal>
             <button
               onClick={handleLogin}
