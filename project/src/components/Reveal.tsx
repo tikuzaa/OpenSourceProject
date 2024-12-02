@@ -13,7 +13,7 @@ export const Reveal = ({ children }: Props) => {
   const mainControls = useAnimation();
 
   useEffect(() => {
-    console.log(isInView);
+    // console.log(isInView);
     if (isInView) {
       mainControls.start("visible");
     }

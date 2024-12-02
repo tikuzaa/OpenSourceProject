@@ -4,3 +4,27 @@
   padding: 2rem;
   text-align: center;
 } */
+
+::selection {
+  background-color: #72ff6c;
+  color: rgb(0, 0, 0); 
+}
+
+/* For WebKit browsers (Safari, Chrome) */
+/* ::-moz-selection {
+  background-color: #72ff6c; 
+  color: rgb(0, 0, 0); 
+} */
+
+.custom-dots .slick-dots {
+  @apply relative mt-4; /* Make dots relative and add margin-top */
+  bottom: 0; /* Reset bottom to 0 */
+}
+
+.custom-dots .slick-dots li button:before {
+  @apply text-black; /* Change dot color */
+}
+
+.custom-dots .slick-dots li.slick-active button:before {
+  @apply text-[#004908]; /* Highlight active dot */
+}

@@ -56,20 +56,22 @@ const Navbar = () => {
             Prizes
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <Link
-            to="/guides"
+          <a
+            href="#home"
             className="relative group text-2xl hover:transition duration-300"
           >
             Guides
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link
-            to="/community"
+          </a>
+          <a
+            href="https://hackerspace-portfolio.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative group text-2xl hover:transition duration-300"
           >
             Community
             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#5dffa2] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
