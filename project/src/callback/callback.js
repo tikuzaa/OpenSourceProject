@@ -2,35 +2,39 @@ import axios from 'axios'
 
 async function getAccessToken() {
 
-     //code 
-    const code = new URLSearchParams(window.location.search).get('code')
+  //code 
+  const code = new URLSearchParams(window.location.search).get('code')
 
-      const res = await axios.post(
-      "/login/oauth/access_token",
-      {
-        client_id:'Ov23liJXs3PPaCWpwZsh',
-        client_secret:'e897822e84059a2aeb2b69b0e874e7c0481e2225',
-        code:code
-      }
-      
-    )
- 
-    const access_token = new URLSearchParams(res.data).get('access_token')
-    return access_token
-    
+  const res = await axios.post(
+    "/login/oauth/access_token",
+    {
+      // client_id: 'Ov23liJXs3PPaCWpwZsh',
+      client_id: 'Ov23livS4Q6TFNyop7nC',
+      // client_secret: 'e897822e84059a2aeb2b69b0e874e7c0481e2225',
+      client_secret: '21048ace92b6d5c6ce40011a61103841a74377bd',
+      code: code
+    }
+
+  )
+
+  const access_token = new URLSearchParams(res.data).get('access_token')
+  return access_token
+
 }
+
+
 //Getting User Data
 async function getUserData(access_token) {
   // console.log("From user data function",access_token)
   const userResponse = await axios.get(
     "/user",
     {
-        headers: {
-            'Authorization':`Bearer ${access_token}`
-        }
+      headers: {
+        'Authorization': `Bearer ${access_token}`
+      }
     }
-)
-return userResponse.data
+  )
+  return userResponse.data
 
 }
 //Getting PR Data For Sayan Sanpui
@@ -273,4 +277,4 @@ async function getIssues6(access_token) {
   }
 }
 
-export  {getAccessToken, getUserData, getPullRequests, getIssues, getPullRequests1, getIssues1, getPullRequests2, getIssues2, getPullRequests3, getIssues3, getPullRequests4, getIssues4, getPullRequests5, getIssues5, getPullRequests6, getIssues6}
+export { getAccessToken, getUserData, getPullRequests, getIssues, getPullRequests1, getIssues1, getPullRequests2, getIssues2, getPullRequests3, getIssues3, getPullRequests4, getIssues4, getPullRequests5, getIssues5, getPullRequests6, getIssues6 }

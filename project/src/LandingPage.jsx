@@ -40,9 +40,15 @@ const LandingPage = () => {
     };
   }, [currentIndex, randomWords]);
 
+  // const handleLogin = () => {
+  //   window.location.href =
+  //     // "https://github.com/login/oauth/authorize?client_id=Ov23liJXs3PPaCWpwZsh&scope=user";
+  //     "https://github.com/login/oauth/authorize?client_id=Ov23livS4Q6TFNyop7nC&scope=user";
+  // };
+
   const handleLogin = () => {
     window.location.href =
-      "https://github.com/login/oauth/authorize?client_id=Ov23liJXs3PPaCWpwZsh&scope=user";
+      "https://github.com/login/oauth/authorize?client_id=Ov23livS4Q6TFNyop7nC&scope=user";
   };
 
   return (
