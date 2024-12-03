@@ -17,9 +17,10 @@ async function getAccessToken() {
     }
   );
 
-  const access_token = res.data.access_token;
+  // const access_token = res.data.access_token;
+  const access_token = new URLSearchParams(res.data).get('access_token')
   return access_token;
-} 
+}
 
 
 //Getting User Data
